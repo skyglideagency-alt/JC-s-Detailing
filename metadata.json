@@ -1,0 +1,6 @@
+{
+  "name": "JC's Detailing",
+  "description": "Premium luxury mobile car detailing website featuring interactive before/after sliders, an AI-powered detailing advisor, and a seamless booking form.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
