@@ -26,9 +26,7 @@ import {
 import { motion } from "motion/react";
 import AdminPortal from "./components/AdminPortal";
 import BeforeAfterGallery from "./components/BeforeAfterGallery";
-
-// Import generated hero image
-const HERO_IMAGE = "/src/assets/images/realistic_detailing_hero_1782495615276.jpg";
+import HERO_IMAGE from "./assets/images/realistic_detailing_hero_1782495615276.jpg";
 
 // Premium Fluid Liquid Animation Configs
 const liquidTransition = {
