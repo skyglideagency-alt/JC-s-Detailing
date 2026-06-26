@@ -28,7 +28,7 @@ import AdminPortal from "./components/AdminPortal";
 import BeforeAfterGallery from "./components/BeforeAfterGallery";
 
 // Import generated hero image
-const HERO_IMAGE = "/src/assets/images/hero_luxury_car_detailing_1782411023283.jpg";
+const HERO_IMAGE = "/src/assets/images/realistic_detailing_hero_1782495615276.jpg";
 
 // Premium Fluid Liquid Animation Configs
 const liquidTransition = {
@@ -270,19 +270,19 @@ export default function App() {
 
       {/* 3. LUXURIOUS SPACIOUS HERO SECTION */}
       <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden py-32 md:py-44 px-4">
-        {/* Background photo with darker, richer gold radial gradient mask */}
+        {/* Background photo with premium gradient overlay (dark at the top, fully visible at the bottom) */}
         <div className="absolute inset-0 z-0">
           <motion.img
-            initial={{ scale: 1.15, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.3 }}
+            initial={{ scale: 1.1, opacity: 0 }}
+            animate={{ scale: 1, opacity: 0.65 }}
             transition={{ duration: 2.2, ease: [0.16, 1, 0.3, 1] }}
             src={HERO_IMAGE}
             alt="Showroom polished car"
-            className="w-full h-full object-cover filter brightness-[0.6]"
+            className="w-full h-full object-cover filter brightness-[0.8] contrast-[1.05]"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/90 to-black" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#05070a] via-transparent to-[#05070a]/60" />
+          {/* Linear gradient: top is dark for header readability, fading to completely transparent at the bottom */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-transparent" />
         </div>
 
         <motion.div 
